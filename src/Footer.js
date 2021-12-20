@@ -13,7 +13,7 @@ export default function Footer() {
       </a>
       <br />
       <a
-        href="https://github.com/jiakjiak/weather-app"
+        href="https://github.com/jiakjiak/react-weather-app"
         className="githubLink"
         target="_blank"
         rel="noreferrer"

@@ -1,0 +1,39 @@
+.temperature {
+  text-align: left;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.celcius,
+.fahrenheit,
+.or {
+  font-size: 20px;
+  text-decoration: none;
+  position: relative;
+  top: -15px;
+}
+
+.active {
+  color: #212529;
+  cursor: default;
+}
+
+.active:hover {
+  color: #212529;
+}
+
+.weatherPicture {
+  width: 180px;
+  position: sticky;
+  float: right;
+  animation: bounce 500ms ease infinite alternate;
+}
+
+.weatherDetails:first-letter {
+  text-transform: capitalize;
+}
+
+.fas {
+  font-size: 12px;
+  text-align: right;
+}

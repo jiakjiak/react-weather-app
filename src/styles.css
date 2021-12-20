@@ -1,0 +1,70 @@
+body {
+  background-image: url("/public/images/background.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: fill;
+}
+
+.weatherApp {
+  border: 1px solid rgb(182, 176, 176);
+}
+
+.weatherApp {
+  display: block;
+  margin: 0 auto;
+}
+
+.appBody {
+  padding: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.temperature-type {
+  font-size: 18px;
+  float: right;
+}
+
+#dayHigh {
+  font-weight: bolder;
+}
+
+.githubLink,
+.linkedinContact {
+  text-decoration: none;
+}
+
+.active {
+  color: #212529;
+  cursor: default;
+}
+
+.active:hover {
+  color: #212529;
+}
+
+.githubLink {
+  color: #fff;
+}
+
+.githubLink:hover {
+  color: #c6f3ff;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(2px);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(7px);
+  }
+}

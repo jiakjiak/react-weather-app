@@ -1,0 +1,10 @@
+.weatherApp {
+  border: 1px solid rgb(182, 176, 176);
+  display: block;
+  margin: 0 auto;
+}
+
+.appBody {
+  padding: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+}

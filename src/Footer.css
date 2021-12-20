@@ -1,0 +1,27 @@
+.footer {
+  font-size: 14px;
+  color: #fff;
+  line-height: 2;
+  text-align: center;
+}
+
+.coder {
+  border-radius: 20px;
+  border: 2px white solid;
+  position: relative;
+  animation: float 500ms ease infinite alternate;
+}
+
+.coder:hover {
+  border: 0;
+  border: 1px white solid;
+}
+
+.githubLink {
+  text-decoration: none;
+  color: #fff;
+}
+
+.githubLink:hover {
+  color: #c6f3ff;
+}

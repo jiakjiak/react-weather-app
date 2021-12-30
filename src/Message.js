@@ -1,5 +1,7 @@
 import React from "react";
 import "./Message.css";
+import Temperature from "./Temperature";
+import FormattedDate from "./FormattedDate";
 
 export default function Message() {
   let weatherData = {
@@ -11,7 +13,7 @@ export default function Message() {
     <div className="row">
       <h1>HELLO, {weatherData.city}</h1>
       <h2>
-        {weatherData.day} {weatherData.time}
+        <FormattedDate />
       </h2>
     </div>
   );

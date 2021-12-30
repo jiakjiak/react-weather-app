@@ -9,13 +9,16 @@ export default function Temperature() {
   const [message, setMessage] = useState("Go ahead, search it! ☝🏼");
 
   function handleSearch(response) {
-    //console.log(response.data.main);
+    //console.log(new Date(response.data.dt * 1000));
+    //console.log(response.data.name);
     setWeather({
       temperature: Math.round(response.data.main.temp),
       realFeel: Math.round(response.data.main.feels_like),
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       iconUrl: "https://openweathermap.org/img/wn/04n@4x.png",
+      city: response.data.name,
+      date: new Date(response.data.dt * 1000),
     });
     setMessage(response.data.weather[0].description);
     setReady(true);
@@ -56,7 +59,7 @@ export default function Temperature() {
     );
   } else {
     const apiKey = "56623de7e1f90faf5cccde1396a53f83";
-    let city = "sisimiut";
+    let city = "seattle";
     let unit = "metric";
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
     axios.get(url).then(handleSearch);

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Loader from "react-loader-spinner";
 import "./Temperature.css";
+import FormattedDate from "./FormattedDate";
 
 export default function Temperature() {
   const [ready, setReady] = useState(false);
@@ -26,34 +27,42 @@ export default function Temperature() {
 
   if (ready) {
     return (
-      <div className="row">
-        <div className="col-8">
-          <div className="temperature">
-            <span className="currentTemperature">{weather.temperature}</span>°
-            <a href="/#" className="celcius active">
-              C
-            </a>
-            <span className="or"> | </span>
-            <a href="/#" className="fahrenheit">
-              F
-            </a>
-          </div>
-          <div className="weatherDetails">
-            <span className="weatherDescription">{message}</span>
-            <br />
-            Real feel: <span className="feelsLike">{weather.realFeel}°</span>
-            <br />
-            <i className="fas fa-wind"> {weather.wind}</i>
-            <br />
-            <i className="fas fa-tint"> {weather.humidity}</i>
-          </div>
+      <div>
+        <div className="row">
+          <h1>HELLO, {weather.city}</h1>
+          <h2>
+            <FormattedDate date={weather.date} />
+          </h2>
         </div>
-        <div className="col-4">
-          <img
-            src={weather.iconUrl}
-            className="weatherPicture"
-            alt={weather.description}
-          />
+        <div className="row">
+          <div className="col-8">
+            <div className="temperature">
+              <span className="currentTemperature">{weather.temperature}</span>°
+              <a href="/#" className="celcius active">
+                C
+              </a>
+              <span className="or"> | </span>
+              <a href="/#" className="fahrenheit">
+                F
+              </a>
+            </div>
+            <div className="weatherDetails">
+              <span className="weatherDescription">{message}</span>
+              <br />
+              Real feel: <span className="feelsLike">{weather.realFeel}°</span>
+              <br />
+              <i className="fas fa-wind"> {weather.wind}</i>
+              <br />
+              <i className="fas fa-tint"> {weather.humidity}</i>
+            </div>
+          </div>
+          <div className="col-4">
+            <img
+              src={weather.iconUrl}
+              className="weatherPicture"
+              alt={weather.description}
+            />
+          </div>
         </div>
       </div>
     );

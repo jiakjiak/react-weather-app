@@ -3,6 +3,7 @@ import axios from "axios";
 import Loader from "react-loader-spinner";
 import "./Temperature.css";
 import FormattedDate from "./FormattedDate";
+import SearchCity from "./SearchCity";
 
 export default function Temperature() {
   const [ready, setReady] = useState(false);
@@ -10,8 +11,6 @@ export default function Temperature() {
   const [message, setMessage] = useState("Go ahead, search it! ☝🏼");
 
   function handleSearch(response) {
-    //console.log(new Date(response.data.dt * 1000));
-    //console.log(response.data.name);
     setWeather({
       temperature: Math.round(response.data.main.temp),
       realFeel: Math.round(response.data.main.feels_like),
@@ -24,12 +23,13 @@ export default function Temperature() {
     setMessage(response.data.weather[0].description);
     setReady(true);
   }
+  //<SearchCity data={weather} />;
 
   if (ready) {
     return (
       <div>
-        <div className="row">
-          <h1>HELLO, {weather.city}</h1>
+        <div className="row text-uppercase">
+          <h1>Hello, {weather.city}</h1>
           <h2>
             <FormattedDate date={weather.date} />
           </h2>
@@ -68,7 +68,7 @@ export default function Temperature() {
     );
   } else {
     const apiKey = "56623de7e1f90faf5cccde1396a53f83";
-    let city = "seattle";
+    let city = "Bangkok";
     let unit = "metric";
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
     axios.get(url).then(handleSearch);

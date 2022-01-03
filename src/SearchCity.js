@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SearchCity.css";
 
-export default function SearchCity() {
+export default function SearchCity(props) {
+  const [city, setCity] = useState(props.data.city);
+  function handleSubmit(event) {
+    event.preventDefault();
+    alert(city);
+  }
+
+  function handleCityChange(event) {
+    setCity(event.target.value);
+  }
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <div className="row">
         <div className="col-7">
           <input
@@ -11,6 +20,7 @@ export default function SearchCity() {
             placeholder="which city?"
             className="searchWeather rounded-pill form-control"
             autoFocus
+            onChange={handleCityChange}
           />
         </div>
         <div className="col-3">

@@ -18,9 +18,9 @@ export default function Footer() {
         target="_blank"
         rel="noreferrer"
       >
-        open-source code
+        This project was coded by JK and open-sourced on Github
       </a>
-      by JK <br />
+      <br />
     </div>
   );
 }

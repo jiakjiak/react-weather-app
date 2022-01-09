@@ -2,6 +2,7 @@ import React from "react";
 import "./Temperature.css";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function Temperature(props) {
   return (
@@ -15,17 +16,7 @@ export default function Temperature(props) {
       <div className="row">
         <div className="col-8">
           <div className="temperature">
-            <span className="currentTemperature">
-              {props.weather.temperature}
-            </span>
-            °
-            <a href="/#" className="celcius active">
-              C
-            </a>
-            <span className="or"> | </span>
-            <a href="/#" className="fahrenheit">
-              F
-            </a>
+            <WeatherTemperature celcius={props.weather.temperature} />
           </div>
           <div className="weatherDetails">
             <span className="weatherDescription">

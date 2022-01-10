@@ -1,5 +1,6 @@
 import React from "react";
 import "./Forecast.css";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Forecast() {
   return (
@@ -7,7 +8,9 @@ export default function Forecast() {
       <p className="appText">
         <b>5-day forecast</b>
       </p>
-      <div className="forecast"></div>
+      <div className="forecast">
+        <WeatherForecast />
+      </div>
 
       <script src="src/script.js"></script>
     </div>

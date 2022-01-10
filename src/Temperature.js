@@ -33,7 +33,7 @@ export default function Temperature(props) {
         </div>
         <div className="col-4">
           <div className="weatherPicture">
-            <WeatherIcon code={props.weather.icon} />
+            <WeatherIcon code={props.weather.icon} size={130} />
           </div>
         </div>
       </div>

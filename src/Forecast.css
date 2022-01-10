@@ -5,3 +5,8 @@
 .forecast {
   text-align: center;
 }
+
+.tempHigh {
+  font-weight: bolder;
+  margin-right: 7px;
+}

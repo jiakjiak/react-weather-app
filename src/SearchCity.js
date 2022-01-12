@@ -4,6 +4,7 @@ import Loader from "react-loader-spinner";
 import "./SearchCity.css";
 import Temperature from "./Temperature";
 import Forecast from "./Forecast";
+import WeatherForecast from "./WeatherForecast";
 
 export default function SearchCity(props) {
   const [city, setCity] = useState(props.city);
@@ -28,6 +29,7 @@ export default function SearchCity(props) {
 
   function handleSearch(response) {
     setWeather({
+      coordinates: response.data.coord,
       temperature: Math.round(response.data.main.temp),
       realFeel: Math.round(response.data.main.feels_like),
       wind: response.data.wind.speed,
@@ -74,6 +76,7 @@ export default function SearchCity(props) {
         </form>
         <Temperature weather={weather} />
         <Forecast />
+        <WeatherForecast coordinates={weather.coordinates} />
       </div>
     );
   } else {

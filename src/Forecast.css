@@ -2,7 +2,8 @@
   text-align: center;
 }
 
-.forecast {
+.forecast,
+.weatherForecast {
   text-align: center;
 }
 

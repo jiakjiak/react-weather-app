@@ -16,7 +16,21 @@ export default function WeatherForecast(props) {
     return (
       <div className="weatherForecast">
         <div className="row">
-          <WeatherForcastDay data={forecast[0]} />
+          <div className="col">
+            <WeatherForcastDay data={forecast[1]} />
+          </div>
+          <div className="col">
+            <WeatherForcastDay data={forecast[2]} />
+          </div>
+          <div className="col">
+            <WeatherForcastDay data={forecast[3]} />
+          </div>
+          <div className="col">
+            <WeatherForcastDay data={forecast[4]} />
+          </div>
+          <div className="col">
+            <WeatherForcastDay data={forecast[5]} />
+          </div>
         </div>
       </div>
     );

@@ -12,14 +12,34 @@ export default function Footer() {
         <img src="images/coder.png" className="coder" alt="coder" width="25" />
       </a>
       <br />
+      This project was coded by{" "}
+      <a
+        href="https://www.linkedin.com/in/jiakoh/"
+        className="linkedinLink"
+        target="_blank"
+        rel="noreferrer"
+      >
+        JK
+      </a>{" "}
+      and is{" "}
       <a
         href="https://github.com/jiakjiak/react-weather-app"
         className="githubLink"
         target="_blank"
         rel="noreferrer"
       >
-        This project was coded by JK and open-sourced on Github
+        open-sourced on Github
+      </a>{" "}
+      and{" "}
+      <a
+        href="https://www.netlify.com/"
+        className="netlifyLink"
+        target="_blank"
+        rel="noreferrer"
+      >
+        hosted on Netlify
       </a>
+      .
       <br />
     </div>
   );

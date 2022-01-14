@@ -17,11 +17,15 @@
   border: 1px white solid;
 }
 
-.githubLink {
+.githubLink,
+.linkedinLink,
+.netlifyLink {
   text-decoration: none;
   color: #fff;
 }
 
-.githubLink:hover {
+.githubLink:hover,
+.linkedinLink:hover,
+.netlifyLink:hover {
   color: #c6f3ff;
 }

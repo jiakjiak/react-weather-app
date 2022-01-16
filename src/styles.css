@@ -60,3 +60,15 @@
     transform: translateY(7px);
   }
 }
+
+@media (max-width: 576px) {
+  .weatherApp {
+    width: 80% !important;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .weatherApp {
+    width: 90% !important;
+  }
+}

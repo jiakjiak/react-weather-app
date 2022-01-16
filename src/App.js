@@ -9,7 +9,9 @@ export default function App() {
   return (
     <div className="App">
       <video
-        autoPlay
+        muted
+        autoPlay={"autoplay"}
+        preLoad="auto"
         loop
         style={{
           position: "fixed",

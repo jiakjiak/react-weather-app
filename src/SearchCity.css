@@ -7,3 +7,16 @@
   font-size: 12px;
   text-align: right;
 }
+
+@media (max-width: 576px) {
+  .searchBar,
+  .searchButton {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .searchButton {
+    text-align: center;
+  }
+}

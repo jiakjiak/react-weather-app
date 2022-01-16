@@ -23,12 +23,18 @@ export default function Temperature(props) {
               {props.weather.description}
             </span>
             <br />
-            Real feel:{" "}
-            <span className="feelsLike">{props.weather.realFeel}°c</span>
+            <span className="feelsLike">
+              {" "}
+              Real feel: {props.weather.realFeel}°c
+            </span>
             <br />
-            <i className="fas fa-wind"> {props.weather.wind} metre/sec</i>
+            <i className="fas fa-wind">
+              <span className="windIcon">{props.weather.wind}m/s</span>
+            </i>
             <br />
-            <i className="fas fa-tint"> {props.weather.humidity}%</i>
+            <i className="fas fa-tint">
+              <span className="humidityIcon">{props.weather.humidity}%</span>
+            </i>
           </div>
         </div>
         <div className="col-4">

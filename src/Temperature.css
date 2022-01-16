@@ -6,11 +6,16 @@ h2 {
 h1 {
   position: relative;
   top: 15px;
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 25px;
 }
 
 .temperature {
   text-align: left;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -43,7 +48,40 @@ h1 {
   text-transform: capitalize;
 }
 
+.feelsLike {
+  font-size: 15px;
+  font-weight: bold;
+}
+
 .fas {
   font-size: 12px;
   text-align: right;
+}
+
+.windIcon,
+.humidityIcon {
+  font-family: "Roboto Condensed", sans-serif;
+  margin-left: 3px;
+}
+
+.humidityIcon {
+  margin-left: 7px;
+}
+
+@media (max-width: 576px) {
+  h1,
+  h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
 }

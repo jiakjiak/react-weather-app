@@ -11,3 +11,23 @@
   font-weight: bolder;
   margin-right: 7px;
 }
+
+@media (max-width: 576px) {
+  .dayOne,
+  .dayTwo,
+  .dayThree,
+  .dayFour,
+  .dayFive {
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .dayOne,
+  .dayTwo,
+  .dayThree,
+  .dayFour,
+  .dayFive {
+    padding-top: 5px;
+  }
+}

@@ -21,19 +21,19 @@ export default function WeatherForecast(props) {
     return (
       <div className="weatherForecast">
         <div className="row">
-          <div className="col">
+          <div className="col dayOne">
             <WeatherForcastDay data={forecast[1]} />
           </div>
-          <div className="col">
+          <div className="col dayTwo">
             <WeatherForcastDay data={forecast[2]} />
           </div>
-          <div className="col">
+          <div className="col dayThree">
             <WeatherForcastDay data={forecast[3]} />
           </div>
-          <div className="col">
+          <div className="col dayFour">
             <WeatherForcastDay data={forecast[4]} />
           </div>
-          <div className="col">
+          <div className="col dayFive">
             <WeatherForcastDay data={forecast[5]} />
           </div>
         </div>

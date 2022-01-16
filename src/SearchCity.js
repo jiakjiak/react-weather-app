@@ -47,7 +47,7 @@ export default function SearchCity(props) {
       <div className="appBody">
         <form onSubmit={handleSubmit}>
           <div className="row searchBar">
-            <div className="col-9">
+            <div className="col-lg-9">
               <input
                 type="search"
                 placeholder="which city?"
@@ -56,12 +56,12 @@ export default function SearchCity(props) {
                 onChange={handleCityChange}
               />
             </div>
-            <div className="col-3">
+            <div className="col-lg-3">
               <button
                 type="submit"
                 className="btn btn-primary rounded-pill w-100 searchButton"
               >
-                <i className="fas fa-search"></i> Search
+                <i className="fas fa-search searchIcon"></i> Search
               </button>
             </div>
           </div>

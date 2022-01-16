@@ -8,7 +8,7 @@
   text-align: right;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 991px) {
   .searchBar,
   .searchButton {
     display: flex;
@@ -18,5 +18,11 @@
 
   .searchButton {
     text-align: center;
+    margin-top: 10px;
+  }
+
+  .searchIcon {
+    margin-right: 5px;
+    margin-top: 5px;
   }
 }

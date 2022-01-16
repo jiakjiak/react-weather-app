@@ -26,7 +26,7 @@ export default function App() {
       >
         <source src={WeatherBackground} type="video/mp4" />
       </video>
-      <div className="container">
+      <div className="container-fluid">
         <div className="weatherApp shadow-sm p-3 mb-0 mt-4 bg-white rounded w-50 p-3">
           <SearchCity city="Singapore" />
         </div>

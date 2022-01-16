@@ -14,7 +14,7 @@ export default function Temperature(props) {
         </h2>
       </div>
       <div className="row">
-        <div className="col-8">
+        <div className="col-lg-8">
           <div className="temperature">
             <WeatherTemperature celcius={props.weather.temperature} />
           </div>
@@ -37,7 +37,7 @@ export default function Temperature(props) {
             </i>
           </div>
         </div>
-        <div className="col-4">
+        <div className="col-lg-4">
           <div className="weatherPicture">
             <WeatherIcon code={props.weather.icon} size={130} />
           </div>

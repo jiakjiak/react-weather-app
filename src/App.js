@@ -11,7 +11,7 @@ export default function App() {
       <video
         muted
         autoPlay={"autoplay"}
-        preLoad="auto"
+        preload="auto"
         loop
         style={{
           position: "fixed",

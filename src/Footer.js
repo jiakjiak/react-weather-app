@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <a
-        href="https://github.com/jiakjiak/react-weather-app"
+        href="https://www.linkedin.com/in/jiakoh/"
         target="_blank"
         rel="noreferrer"
       >
@@ -30,14 +30,14 @@ export default function Footer() {
       >
         open-sourced on Github
       </a>{" "}
-      and{" "}
+      and hosted on{" "}
       <a
         href="https://www.netlify.com/"
         className="netlifyLink"
         target="_blank"
         rel="noreferrer"
       >
-        hosted on Netlify
+        Netlify
       </a>
       .
       <br />

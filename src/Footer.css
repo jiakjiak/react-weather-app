@@ -1,6 +1,6 @@
 .footer {
   font-size: 14px;
-  color: #fff;
+  color: #000;
   line-height: 2;
   text-align: center;
 }
@@ -9,23 +9,22 @@
   border-radius: 20px;
   border: 2px white solid;
   position: relative;
-  animation: float 500ms ease infinite alternate;
 }
 
 .coder:hover {
   border: 0;
-  border: 1px white solid;
+  border: 1px #fff solid;
 }
 
 .githubLink,
 .linkedinLink,
 .netlifyLink {
   text-decoration: none;
-  color: #fff;
+  color: #0c8cd6;
 }
 
 .githubLink:hover,
 .linkedinLink:hover,
 .netlifyLink:hover {
-  color: #c6f3ff;
+  color: #fff;
 }

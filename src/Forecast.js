@@ -5,7 +5,7 @@ export default function Forecast() {
   return (
     <div className="row">
       <p className="appText">
-        <b>5-day forecast</b>
+        <b>5-day Forecast</b>
       </p>
 
       <script src="src/script.js"></script>

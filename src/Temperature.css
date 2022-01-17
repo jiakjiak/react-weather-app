@@ -92,7 +92,8 @@ h2 {
   }
 
   .weatherPicture {
-    width: 70px;
-    float: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }

@@ -20,6 +20,10 @@
   .dayFive {
     padding-top: 10px;
   }
+
+  .appText {
+    margin-top: 10px;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 991px) {
@@ -29,5 +33,9 @@
   .dayFour,
   .dayFive {
     padding-top: 5px;
+  }
+
+  .appText {
+    margin-top: 15px;
   }
 }
